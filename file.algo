@@ -1,0 +1,19 @@
+ALGORITHM ex
+VAR
+    c:CHAR;
+    nb,nb1,nb2:INTEGER;
+BEGIN
+    WHILE (c<> ".") 
+        nb:=nb+1;
+        IF (c=" ") THEN
+        nb1:=nb1+1;
+        END_IF
+        IF (uppercase(c)="A" or uppercase(c)=" E" or uppercase(c)="Y"  or uppercase(c)="U" or uppercase(c)="I" or uppercase(c)="O"   )) THEN
+            nb2:=nb2+1;
+        END_IF
+    
+    END_WHILE
+    write("nombre de caracteres est ",nb);
+    write("nombre de mots est ",nb1+1);
+    write("nombre de voyelles est ",nb2); 
+END
